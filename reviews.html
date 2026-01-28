@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews | Cafe Delights</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Cafe Delights</a>
+            <div class="hamburger"><span>☰</span></div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/reviews.html">Reviews</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="section text-center">
+        <div class="container">
+            <h1>Wall of Love</h1>
+            <p class="text-gold">⭐️⭐️⭐️⭐️⭐️</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Review Card 1 -->
+                <div style="background: var(--bg-surface); padding: 2rem; border-radius: 12px; position: relative;">
+                    <div
+                        style="font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 10px; left: 20px;">
+                        "</div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem; position: relative; z-index: 1;">
+                        "Good place. Food: 5/5, Service: 5/5"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">
+                            D</div>
+                        <div>
+                            <h4 style="margin: 0; color: white;">Dav Sl</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Local Guide · 34 reviews</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div style="background: var(--bg-surface); padding: 2rem; border-radius: 12px; position: relative;">
+                    <div
+                        style="font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 10px; left: 20px;">
+                        "</div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem; position: relative; z-index: 1;">
+                        "Super accurate and fast."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">
+                            S</div>
+                        <div>
+                            <h4 style="margin: 0; color: white;">Stanley Kwambe</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">1 review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div style="background: var(--bg-surface); padding: 2rem; border-radius: 12px; position: relative;">
+                    <div
+                        style="font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 10px; left: 20px;">
+                        "</div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem; position: relative; z-index: 1;">
+                        "Food: 5/5, Service: 5/5"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">
+                            V</div>
+                        <div>
+                            <h4 style="margin: 0; color: white;">Vannesa Vannesa</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">3 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Review Section -->
+                <div
+                    style="max-width: 600px; margin: 4rem auto 0; background: var(--bg-surface-2); padding: 2rem; border-radius: 12px;">
+                    <h3 class="text-center">Been here? Tell us what you think!</h3>
+                    <form style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;"
+                        onsubmit="event.preventDefault(); alert('Thank you for your review!');">
+                        <input type="text" placeholder="Your Name"
+                            style="padding: 1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-body); color: white;"
+                            required>
+                        <textarea rows="4" placeholder="Your Review"
+                            style="padding: 1rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-body); color: white;"
+                            required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cafe Delights. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

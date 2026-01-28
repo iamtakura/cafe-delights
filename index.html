@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Delights | Coffee, Desserts & Vibes</title>
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">
+        <img src="/images/logo.png" alt="Cafe Delights" style="height: 50px; vertical-align: middle;">
+        Cafe Delights
+      </a>
+      <div class="hamburger">
+        <span>☰</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/menu.html">Menu</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="section text-center"
+    style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/gallery-2.jpg') no-repeat center/cover; padding: 10rem 0;">
+    <div class="container">
+      <h1 class="text-gold">Experience the Delight</h1>
+      <p style="font-size: 1.5rem; margin: 1.5rem 0 2rem;">Premium Coffee & Exquisite Desserts in the Heart of the City
+      </p>
+      <a href="/menu.html" class="btn btn-primary">View Menu</a>
+    </div>
+  </header>
+
+  <!-- About / Vibe Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Our Vibe</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+        <!-- Large Feature Image -->
+        <div style="border-radius: 12px; overflow: hidden; height: 350px; grid-column: span 1;">
+          <img src="/images/brand-1.png" alt="Happy Customer"
+            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Text Block -->
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; padding: 2rem; background: var(--bg-surface); border-radius: 12px; grid-column: span 1;">
+          <h3>More Than Just Coffee</h3>
+          <p style="color: var(--text-muted); margin-top: 1rem;">
+            Step into a world of flavor. From our signature "Cafe Delights" specialized cakes to our robust coffee
+            blends, every item is crafted to perfection. Whether you're here for a quick espresso or a long evening with
+            friends, we promise an unforgettable experience.
+          </p>
+        </div>
+
+        <!-- Donut Hand -->
+        <div style="border-radius: 12px; overflow: hidden; height: 350px;">
+          <img src="/images/donut-hand.jpg" alt="Donut Delight"
+            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- New Row -->
+
+        <!-- KeDecember -->
+        <div style="border-radius: 12px; overflow: hidden; height: 350px;">
+          <img src="/images/kedecember.jpg" alt="Festive Vibes"
+            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Burger Ad -->
+        <div style="border-radius: 12px; overflow: hidden; height: 350px;">
+          <img src="/images/burger-ad.jpg" alt="Signature Burger"
+            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Smile -->
+        <div style="border-radius: 12px; overflow: hidden; height: 350px;">
+          <img src="/images/smile-1.jpg" alt="All Smiles"
+            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section text-center" style="background: var(--bg-surface-2);">
+    <div class="container">
+      <h2>Taste the Magic</h2>
+      <p style="margin: 1rem 0 2rem; color: var(--text-muted);">Open Daily from 8:00 AM - 10:00 PM</p>
+      <a href="/contact.html#map" class="btn btn-primary">Visit Us Today</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Cafe Delights. All rights reserved.</p>
+      <div style="margin-top: 1rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/cafedelights.zw/" target="_blank" rel="noopener noreferrer"
+          style="color: var(--secondary); display: flex; align-items: center; transition: transform 0.3s;"
+          onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+          title="Follow us on Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <!-- Phone Link -->
+        <a href="tel:+26377613111"
+          style="color: var(--secondary); display: flex; align-items: center; transition: transform 0.3s;"
+          onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Call Us">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

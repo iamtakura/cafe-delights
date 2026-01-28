@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Cafe Delights</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+        .menu-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/menu-bg-cookie.png') no-repeat center center/cover;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background-attachment: fixed;
+        }
+
+        .menu-section {
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            /* Parallax effect */
+        }
+
+        .menu-overlay {
+            background: rgba(18, 18, 18, 0.85);
+            /* Dark transparency */
+            padding: 4rem 0;
+            backdrop-filter: blur(2px);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: rgba(30, 30, 30, 0.6);
+            /* Semi-transparent surface */
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.2s, background 0.2s;
+            backdrop-filter: blur(5px);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            background: rgba(30, 30, 30, 0.9);
+        }
+
+        .menu-item-secondary {
+            background: rgba(30, 30, 30, 0.6);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            transition: transform 0.2s, background 0.2s;
+            backdrop-filter: blur(5px);
+        }
+
+        .menu-item-secondary:hover {
+            transform: translateY(-5px);
+            background: rgba(30, 30, 30, 0.9);
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            color: var(--text-main);
+        }
+
+        .menu-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        /* Mobile adjustment for fixed background support */
+        @media (hover: none) {
+
+            .menu-section,
+            .menu-hero {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Cafe Delights</a>
+            <div class="hamburger"><span>☰</span></div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/reviews.html">Reviews</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="menu-hero">
+        <div class="container">
+            <h1 style="font-size: 4rem;">Our Menu</h1>
+            <p class="text-gold" style="font-size: 1.5rem;">Handcrafting Happiness, One Bite at a Time</p>
+        </div>
+    </header>
+
+    <!-- Coffee & More -->
+    <section class="menu-section" style="background-image: url('/images/menu-bg-coffee.jpg');">
+        <div class="menu-overlay">
+            <div class="container">
+                <h2 class="text-center">Coffee & More</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Instant coffee</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Cappuccino</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Latte</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Espresso</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Hot chocolate</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Cafe Mocha</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Rooibos</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Tanganda</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Green Tea</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Concoction</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Milkshakes</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Soft Drinks</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Bottled Water</h3><span class="text-gold">$0.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Mango freezo</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Strawberry freezo</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Mixed Berry Freezo</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Mango and strawberry</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Malawi Shandy</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Rock Shandy</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Frozen Mint Lemonade</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastries -->
+    <section class="menu-section" style="background-image: url('/images/menu-bg-donuts.jpg');">
+        <div class="menu-overlay">
+            <div class="container">
+                <h2 class="text-center">Pastries</h2>
+                <div class="menu-grid">
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Steak and kidney pie</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Steak pie</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Chicken pie</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Bran muffin</h3><span class="text-gold">$0.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Plain muffin</h3><span class="text-gold">$0.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Cinnamon Buns</h3><span class="text-gold">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Croissants</h3><span class="text-gold">$1.00</span>
+                        </div>
+                        <p class="menu-desc">Plain, orange flavored, lemon flavored</p>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Croissant egg sandwich</h3><span class="text-gold">$2.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Croissant cheese sandwich</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Ring Doughnuts</h3><span class="text-gold">$0.50</span>
+                        </div>
+                        <p class="menu-desc">Choc & nut, coconut, sugar & cinnamon, rainbow, choc chipped</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizzas -->
+    <section class="menu-section" style="background-image: url('/images/menu-bg-cake.jpg');">
+        <div class="menu-overlay">
+            <div class="container">
+                <h2 class="text-center">Pizzas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Delight supreme</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Chicken and mushroom pizza</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Hawaiian pizza</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Sausage Pizza</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Margherita Pizza</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Burgers & More -->
+    <section class="menu-section" style="background-image: url('/images/menu-bg-burger.jpg');">
+        <div class="menu-overlay">
+            <div class="container">
+                <h2 class="text-center">Burgers & More</h2>
+                <div class="menu-grid">
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Sausage and chips</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Quarter chicken & chips</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Mediterranean chicken wrap & chips</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Wings & chips</h3><span class="text-gold">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Beef burger</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Double beef burger</h3><span class="text-gold">$7.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Grilled chicken burger</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-secondary">
+                        <div class="menu-header">
+                            <h3>Double grilled chicken burger</h3><span class="text-gold">$7.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subs & Sandwiches -->
+    <section class="menu-section" style="background-image: url('/images/kedecember.jpg');">
+        <div class="menu-overlay">
+            <div class="container">
+                <h2 class="text-center">Subs & Sandwiches</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Delight club</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Delight club & chips</h3><span class="text-gold">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Cheese and tomato</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Pastrami and cheese</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Pastrami and cheese & chips</h3><span class="text-gold">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Egg sandwich</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Egg sandwich & chips</h3><span class="text-gold">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Chicken mayo</h3><span class="text-gold">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Chicken mayo & chips</h3><span class="text-gold">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Chicken mayo sub</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h3>Smoked brisket sub</h3><span class="text-gold">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cafe Delights. All rights reserved.</p>
+            <div style="margin-top: 1rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+                <a href="https://www.instagram.com/cafedelights.zw/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); display: flex; align-items: center; transition: transform 0.3s;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                    title="Follow us on Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="tel:+26377613111"
+                    style="color: var(--secondary); display: flex; align-items: center; transition: transform 0.3s;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                    title="Call Us">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
